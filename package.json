@@ -4,7 +4,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=development webpack serve",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "cross-env NODE_ENV=development webpack serve"
+    "dev": "cross-env NODE_ENV=development webpack serve",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
   },
   "dependencies": {
     "@monaco-editor/react": "^4.6.0",
@@ -29,5 +31,6 @@
     "webpack-dev-server": "^4.15.1",
     "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.0"
-  }
+  },
+  "homepage": "https://yourusername.github.io/your-repo-name"
 }
